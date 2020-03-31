@@ -23,7 +23,4 @@
         var scoresElement = document.getElementById('scores');
         scoresElement.innerHTML = output;
     }
-    module.exports = {
-        addResult: addResult,
-        updateScoreboard: updateScoreboard
-    };
+    export { addResult, updateScoreboard };

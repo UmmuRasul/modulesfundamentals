@@ -1,5 +1,3 @@
-define([], function() {
-
     console.log('Creating a scoreboard...');
 
     // private members
@@ -25,10 +23,7 @@ define([], function() {
         var scoresElement = document.getElementById('scores');
         scoresElement.innerHTML = output;
     }
-
-    // return public members
-    return {
+    module.exports = {
         addResult: addResult,
         updateScoreboard: updateScoreboard
-    }
-});
+    };
